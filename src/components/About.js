@@ -159,13 +159,13 @@ function About() {
                     </Typography>
                     <Typography sx={{ fontFamily: 'Inconsolata, monospace' }} >⋆﹥━━━━━━━━━━━━━━━━━━━━━﹤⋆</Typography>
                     <Box sx={{ display: 'flex', marginBottom: 'auto', alignItems: 'center', justifyContent: 'space-between', }}>
-                        <a href="https://d3l-n3st.vercel.app/prev" target="_blank" rel="noopener noreferrer">
+                        <a href="https://d3l-n3st.vercel.app/prev">
                             <Box component="img" src={leftarr} alt="Left" sx={{ width: 20, height: 20 }} />
                         </a>
                         <a href="https://d3l-n3st.vercel.app/" target="_blank" rel="noopener noreferrer" sx={{ mx: 2 }}>
                             <Box component="img" src={tree} alt="Tree" sx={{ margin: "0px 10px", width: 20, height: 20 }} />
                         </a>
-                        <a href="https://d3l-n3st.vercel.app/next" target="_blank" rel="noopener noreferrer">
+                        <a href="https://d3l-n3st.vercel.app/next">
                             <Box component="img" src={rightarr} alt="Right" sx={{ width: 20, height: 20 }} />
                         </a>
                     </Box>
