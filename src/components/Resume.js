@@ -83,15 +83,24 @@ function Resume() {
                 border: '2px solid black',
             }}
         >
-            <Typography sx={{ ...headerStyle, fontWeight: 500, margin: '5px', fontSize: '35px', marginRight: 'auto' }}>
+            <Typography 
+                sx={{ 
+                    ...headerStyle, 
+                    fontWeight: 500, 
+                    margin: '5px', 
+                    fontSize: '35px', 
+                    marginRight: 'auto',
+                    marginTop: {xs: '30px', sm: '5px'},
+                    }}>
                 Work Experience
             </Typography>
             <Box
                 sx={{
                     overflowY: 'auto',
                     width: '100%',
-                    height: { xs: '100%', sm: '370px' },
+                    height: { xs: '670px', sm: '370px' },
                     padding: '0 10px',
+                    marginTop: {xs: '70px', sm: '10px'},
                     border: { xs: '2px solid black' },
                     backgroundColor: "#b4dc87",
                 }}

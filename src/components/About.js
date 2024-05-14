@@ -27,6 +27,14 @@ const contentStyle = {
     fontSize: "14px",
 }
 
+const bodyStyle = {
+    fontFamily: 'Inconsolata, monospace', 
+    fontWeight: 500, 
+    textAlign: {xs: 'center', sm: 'left'}, 
+    marginLeft: {xs: 'auto', sm: ''}, 
+    marginRight: {xs: 'auto', sm: ''},
+}
+
 function About() {
     return (
         <Box sx={{
@@ -96,16 +104,23 @@ function About() {
                     </Box>
                 </Box>
                 <Box>
-                    <Typography variant="h3" component="div" sx={{ fontFamily: 'Inconsolata, monospace', fontWeight: 500, }}>
+                    <Typography 
+                        variant="h3" 
+                        component="div" 
+                        sx={bodyStyle}>
                         Stephen Wang
                     </Typography>
-                    <Typography variant="h6" component="div" sx={{ fontFamily: 'Inconsolata, monospace', fontWeight: 500, }}>
+                    <Typography 
+                        variant="h6" 
+                        component="div" 
+                        sx={bodyStyle}>
                         UWaterloo CS 2025
                     </Typography>
                     <Typography
                         variant="body"
                         component="div"
                         sx={{
+                            ...bodyStyle,
                             marginTop: '10px',
                             fontFamily: 'Inconsolata, monospace',
                             fontSize: "14px",

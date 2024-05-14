@@ -107,6 +107,9 @@ function Home() {
             <Typography onClick={() => setPage('resume')} sx={textStyle}>
               Resume
             </Typography>
+            <Typography onClick={() => setPage('photos')} sx={{...textStyle, borderRight: {xs: 'none', sm: '2px solid black',}}}>
+              Photos
+            </Typography>
             <Box 
               onClick={handleClose} 
               sx={{ 
@@ -131,7 +134,7 @@ function Home() {
           {page === 'resume' && (
             <Resume />
           )}
-          {page === 'photo' && (
+          {page === 'photos' && (
             <Photos />
           )}
         </Box>)}

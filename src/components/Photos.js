@@ -1,8 +1,19 @@
 import React from 'react';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
+import Berlin from '../static/photos/Berlin.JPG';
+import Iceland from '../static/photos/Iceland.JPG';
+import Icepick from '../static/photos/Icepick.JPG';
+import Prague from '../static/photos/Prague.JPG';
+import Montreal from '../static/photos/Montreal.jpg';
 
-const photos = [];
+const photos = [
+        {image: Berlin, name: "In Berlin", note: "May 2024"}, 
+        {image: Prague, name: "In Prague", note: "May 2024"},
+        {image: Iceland, name: "In Iceland", note: "May 2023"}, 
+        {image: Icepick, name: "Icepicks", note: "May 2023"},
+        {image: Montreal, name: "In Montreal", note: "Feb 2022"},
+    ];
 
 const headerStyle = {
     fontFamily: 'Inconsolata, monospace',
@@ -21,10 +32,11 @@ function Photos() {
                 alignItems: 'center',
                 backgroundColor: "#feffe9",
                 padding: { xs: '10px', sm: '20px' },
+                justifyContent: 'space-between',
                 border: '2px solid black',
             }}
         >
-            <Typography sx={{...headerStyle, marginRight: 'auto'}}>Some of My Photos</Typography>
+            <Typography sx={{...headerStyle, fontSize: "35px", fontWeight: "500", marginRight: 'auto'}}>Some Photos</Typography>
             <Box
                 sx={{
                     display: 'flex',
