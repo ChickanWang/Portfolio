@@ -24,7 +24,7 @@ function Photos() {
                 border: '2px solid black',
             }}
         >
-            <Typography sx={{...headerStyle, marginRight: 'auto'}}>Some Photos</Typography>
+            <Typography sx={{...headerStyle, marginRight: 'auto'}}>Some of My Photos</Typography>
             <Box
                 sx={{
                     display: 'flex',
