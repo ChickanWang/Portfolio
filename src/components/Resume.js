@@ -100,7 +100,7 @@ function Resume() {
                     width: '100%',
                     height: { xs: '670px', sm: '370px' },
                     padding: '0 10px',
-                    marginTop: {xs: '70px', sm: '10px'},
+                    marginTop: {xs: '70px', sm: '0px'},
                     border: { xs: '2px solid black' },
                     backgroundColor: "#b4dc87",
                 }}
