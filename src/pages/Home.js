@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { Box, CssBaseline } from '@mui/material';
-import bgday from '../static/bgday.webp';
-import bgnight from '../static/bgnight.webp';
-import bgtwilight from '../static/bgtwilight.webp';
-import bgcool from '../static/pixel.gif';
+import bgday from '../static/backgrounds/bgday.webp';
+import bgnight from '../static/backgrounds/bgnight.webp';
+import bgtwilight from '../static/backgrounds/bgtwilight.webp';
+import bgcool from '../static/backgrounds/bgcool.gif';
 import Typography from '@mui/material/Typography';
 import { GlobalStyles } from '@mui/material';
 import About from '../components/About';
@@ -58,7 +58,7 @@ function Home() {
     
     if (hours >= 10 && hours < 18) {
       setBackground(bgday);
-    } else if (hours === 12) {
+    } else if (hours === 0) {
       setBackground(bgcool);
     }
     else if ((hours >= 18 && hours < 21) || (hours >= 5 && hours < 10)) {
@@ -77,7 +77,9 @@ function Home() {
           justifyContent: 'center',
           alignItems: 'center',
           width: '100%',
-          height: {sm: '100vh', xs:'1100px'},
+          minWidth: '260px',
+          minHeight: '650px',
+          height: {xs:'1100px', md: '100vh'},
           backgroundImage: `url(${background})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
@@ -85,8 +87,8 @@ function Home() {
         }}
       >
         { isVisible && (<Box sx={{
-            width: {xs: '300px', sm:'800px'},
-            height: {xs: '1000px', sm:'530px'},
+            width: {xs: '300px', sm: '650px', md: '800px'},
+            height: {xs: '1000px', sm:'850px', md: '540px'},
             backgroundColor: 'white',
             display: 'flex',
             flexDirection:  'column',

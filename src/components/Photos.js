@@ -6,10 +6,12 @@ import Iceland from '../static/photos/Iceland.JPG';
 import Icepick from '../static/photos/Icepick.JPG';
 import Prague from '../static/photos/Prague.JPG';
 import Montreal from '../static/photos/Montreal.jpg';
+import Ski from '../static/photos/Ski.JPG';
 
 const photos = [
         {image: Berlin, name: "In Berlin", note: "May 2024"}, 
         {image: Prague, name: "In Prague", note: "May 2024"},
+        {image: Ski, name: "Skiing", note: "Feb 2024"}, 
         {image: Iceland, name: "In Iceland", note: "May 2023"}, 
         {image: Icepick, name: "Icepicks", note: "May 2023"},
         {image: Montreal, name: "In Montreal", note: "Feb 2022"},
@@ -36,7 +38,9 @@ function Photos() {
                 border: '2px solid black',
             }}
         >
-            <Typography sx={{...headerStyle, fontSize: "35px", fontWeight: "500", marginRight: 'auto'}}>Some Photos</Typography>
+            <Typography sx={{...headerStyle, fontSize: "35px", fontWeight: "800", marginRight: 'auto'}}>
+                Photos
+            </Typography>
             <Box
                 sx={{
                     display: 'flex',
@@ -44,7 +48,7 @@ function Photos() {
                     justifyContent: 'space-around',
                     overflowY: 'auto',
                     width: '100%',
-                    height: { xs: '900px', sm: '370px' },
+                    height: { xs: '850px', sm: '700px', md: '370px' },
                     padding: '0 10px',
                     border: { xs: '2px solid black' },
                     backgroundColor: "#b4dc87",

@@ -6,6 +6,8 @@ import FarmLink from '../static/logos/farmlink.jpeg';
 import SSNC from '../static/logos/ss&c.png';
 import Zynga from '../static/logos/zynga.png';
 import WealthyPlanet from '../static/logos/wealthyplanet.jpeg';
+import UWaterloo from '../static/logos/uwaterloo.jpeg';
+import ResumeCard from './ResumeCard';
 
 const companies = [
     {
@@ -58,15 +60,21 @@ const companies = [
     },
 ];
 
+const schools = [
+    {
+        image: UWaterloo,
+        name: 'University of Waterloo',
+        title: 'BCS - AI Specialization',
+        duration: 'Sep 2020 - Apr 2025',
+        location: 'Waterloo, ON',
+        link: 'https://uwaterloo.ca/'
+    }
+]
+
 const headerStyle = {
     fontFamily: 'Inconsolata, monospace',
-    fontSize: "20px",
-    fontWeight: 600,
-}
-
-const contentStyle = {
-    fontFamily: 'Inconsolata, monospace',
-    fontSize: "14px",
+    fontSize: "15px",
+    fontWeight: 700,
 }
 
 function Resume() {
@@ -79,7 +87,7 @@ function Resume() {
                 width: '100%',
                 alignItems: 'center',
                 backgroundColor: "#feffe9",
-                padding: { xs: '10px', sm: '20px' },
+                padding: { xs: '10px', sm: '2px 20px' },
                 border: '2px solid black',
             }}
         >
@@ -90,58 +98,36 @@ function Resume() {
                     margin: '5px', 
                     fontSize: '35px', 
                     marginRight: 'auto',
-                    marginTop: {xs: '30px', sm: '5px'},
+                    marginTop: '3px',
                     }}>
-                Work Experience
+                Experience & Education
             </Typography>
+            <Box
+                sx={{
+                    width: '100%',
+                    padding: '0px 10px',
+                    marginTop: '10px',
+                    border: { xs: '2px solid black' },
+                    backgroundColor: "#b4dc87",
+                }}
+            >
+                {schools.map((company, index) => (
+                    <ResumeCard company={company} key={index}/>
+                ))}
+            </Box>
             <Box
                 sx={{
                     overflowY: 'auto',
                     width: '100%',
-                    height: { xs: '670px', sm: '370px' },
+                    height: { xs: '650px', sm: '560px', md: '280px', },
                     padding: '0 10px',
-                    marginTop: {xs: '70px', sm: '0px'},
+                    margin: '10px 0px',
                     border: { xs: '2px solid black' },
                     backgroundColor: "#b4dc87",
                 }}
             >
                 {companies.map((company, index) => (
-                    <Box
-                        key={index}
-                        sx={{
-                            display: 'flex',
-                            alignItems: 'center',
-                            border: '1.5px solid black',
-                            padding: '2px',
-                            paddingLeft: '0px',
-                            margin: '10px 0px',
-                            backgroundColor: "#feffe9",
-                        }}
-                    >
-                        <a href={company.link} style={{ paddingTop: 0 }}>
-                            <Box
-                                component="img"
-                                src={company.image}
-                                alt={company.name}
-                                sx={{
-                                    width: 50,
-                                    height: 50,
-                                    mx: 2,
-                                    mt: 1,
-                                    border: '1px solid black',
-                                    transition: 'filter 0.3s',
-                                    '&:hover': {
-                                        filter: 'brightness(80%)',
-                                    },
-                                }}
-                            />
-                        </a>
-                        <Box sx={{ paddingBottom: "2px" }}>
-                            <Typography sx={headerStyle}>{company.name}</Typography>
-                            <Typography sx={{ ...contentStyle, fontWeight: 500 }}>{company.title}</Typography>
-                            <Typography sx={{ ...contentStyle, fontWeight: 300 }}>{company.duration}</Typography>
-                        </Box>
-                    </Box>
+                    <ResumeCard company={company} key={index}/>
                 ))}
             </Box>
         </Box>

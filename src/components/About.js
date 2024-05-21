@@ -1,14 +1,14 @@
 import React from 'react';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
-import profile from '../static/profile.jpeg';
 import IconButton from '@mui/material/IconButton';
 import { GitHub, Email, LinkedIn, Description } from '@mui/icons-material';
-import resume from '../static/resume.pdf';
 import Listening from '../components/Listening';
-import leftarr from '../static/leftarr.png';
-import rightarr from '../static/rightarr.png';
-import tree from '../static/tree.png';
+import resume from '../static/resume.pdf';
+import leftarr from '../static/assets/leftarr.png';
+import rightarr from '../static/assets/rightarr.png';
+import tree from '../static/assets/tree.png';
+import profile from '../static/profile.jpeg';
 
 const iconStyle = {
     border: '2px solid black',
@@ -30,9 +30,9 @@ const contentStyle = {
 const bodyStyle = {
     fontFamily: 'Inconsolata, monospace', 
     fontWeight: 500, 
-    textAlign: {xs: 'center', sm: 'left'}, 
-    marginLeft: {xs: 'auto', sm: ''}, 
-    marginRight: {xs: 'auto', sm: ''},
+    textAlign: {xs: 'center', md: 'left'}, 
+    marginLeft: {xs: 'auto', md: ''}, 
+    marginRight: {xs: 'auto', md: ''},
 }
 
 function About() {
@@ -47,9 +47,9 @@ function About() {
         }}>
             <Box sx={{
                 display: 'flex',
-                flexDirection: { xs: 'column', sm: 'row' }
+                flexDirection: { xs: 'column', md: 'row' }
             }}>
-                <Box sx={{ marginRight: { sm: '40px' } }}>
+                <Box sx={{ marginRight: { md: '40px' } }}>
                     <Box sx={{ display: 'flex', justifyContent: 'center' }}>
                         <Box
                             component="img"
@@ -59,8 +59,8 @@ function About() {
                                 width: '200px',
                                 height: '200px',
                                 border: '2px solid black',
-                                marginLeft: { xs: 'auto', sm: '0px' },
-                                marginRight: { xs: 'auto', sm: '0px' }
+                                marginLeft: { xs: 'auto', md: '0px' },
+                                marginRight: { xs: 'auto', md: '0px' }
                             }}
                         />
                     </Box>
@@ -150,19 +150,19 @@ function About() {
                 </Box>
             </Box>
 
-            <Box sx={{ display: 'flex', flexDirection: { xs: 'column', sm: 'row' }, justifyContent: "space-between", }}>
+            <Box sx={{ display: 'flex', flexDirection: { xs: 'column', md: 'row' }, justifyContent: "space-between", }}>
                 <Listening />
                 <Box
                     sx={{
                         display: 'flex',
                         flexDirection: "column",
                         marginLeft: 'auto',
-                        margin: { xs: '0px', sm: '20px 30px' },
+                        margin: { xs: '0px', md: '20px 30px' },
                         width: "100%",
                         alignItems: 'center',
                         border: '2px solid black',
                         backgroundColor: '#e4f8ba',
-                        padding: { xs: '5px', sm: '0px' }
+                        padding: { xs: '5px', md: '0px' }
                     }}>
                     <Typography
                         sx={{

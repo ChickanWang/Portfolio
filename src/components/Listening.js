@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { getNowPlayingItem } from "./Spotify";
-import offline from '../static/offline.avif';
+import offline from '../static/assets/offline.avif';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 
@@ -38,7 +38,7 @@ function Listening(props) {
             sx={{
                 display: 'flex',
                 margin: "20px 0px",
-                width: { xs: '100%', sm: '320px' },
+                width: { xs: '100%', md: '320px' },
                 flexDirection: 'column',
                 p: 1,
                 border: '2px solid black',
