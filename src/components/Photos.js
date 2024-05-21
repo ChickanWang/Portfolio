@@ -33,12 +33,19 @@ function Photos() {
                 width: '100%',
                 alignItems: 'center',
                 backgroundColor: "#feffe9",
-                padding: { xs: '10px', sm: '20px' },
-                justifyContent: 'space-between',
+                padding: { xs: '10px', sm: '2px 20px' },
                 border: '2px solid black',
             }}
         >
-            <Typography sx={{...headerStyle, fontSize: "35px", fontWeight: "800", marginRight: 'auto'}}>
+            <Typography 
+                sx={{ 
+                    ...headerStyle, 
+                    fontWeight: 500, 
+                    margin: '5px', 
+                    fontSize: '35px', 
+                    marginRight: 'auto',
+                    marginTop: '3px',
+                    }}>
                 Photos
             </Typography>
             <Box
@@ -48,8 +55,9 @@ function Photos() {
                     justifyContent: 'space-around',
                     overflowY: 'auto',
                     width: '100%',
-                    height: { xs: '850px', sm: '700px', md: '370px' },
-                    padding: '0 10px',
+                    height: { xs: '850px', sm: '700px', md: '394px' },
+                    padding: '0px 10px',
+                    marginTop: '10px',
                     border: { xs: '2px solid black' },
                     backgroundColor: "#b4dc87",
                 }}
