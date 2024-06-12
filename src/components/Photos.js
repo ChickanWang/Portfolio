@@ -9,12 +9,12 @@ import Montreal from '../static/photos/Montreal.jpg';
 import Ski from '../static/photos/Ski.JPG';
 
 const photos = [
-        {image: Berlin, name: "In Berlin", note: "May 2024"}, 
-        {image: Prague, name: "In Prague", note: "May 2024"},
+        {image: Berlin, name: "Berlin", note: "May 2024"}, 
+        {image: Prague, name: "Prague", note: "May 2024"},
         {image: Ski, name: "Skiing", note: "Feb 2024"}, 
-        {image: Iceland, name: "In Iceland", note: "May 2023"}, 
+        {image: Iceland, name: "Iceland", note: "May 2023"}, 
         {image: Icepick, name: "Icepicks", note: "May 2023"},
-        {image: Montreal, name: "In Montreal", note: "Feb 2022"},
+        {image: Montreal, name: "Montreal", note: "Feb 2022"},
     ];
 
 const headerStyle = {
