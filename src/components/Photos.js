@@ -5,16 +5,16 @@ import Berlin from '../static/photos/Berlin.JPG';
 import Iceland from '../static/photos/Iceland.JPG';
 import Icepick from '../static/photos/Icepick.JPG';
 import Prague from '../static/photos/Prague.JPG';
-import Montreal from '../static/photos/Montreal.jpg';
+import Algonquin from '../static/photos/Algonquin.JPG';
 import Ski from '../static/photos/Ski.JPG';
 
 const photos = [
+        {image: Algonquin, name: "Algonquin", note: "Jun 2024"},
         {image: Berlin, name: "Berlin", note: "May 2024"}, 
         {image: Prague, name: "Prague", note: "May 2024"},
         {image: Ski, name: "Skiing", note: "Feb 2024"}, 
         {image: Iceland, name: "Iceland", note: "May 2023"}, 
         {image: Icepick, name: "Icepicks", note: "May 2023"},
-        {image: Montreal, name: "Montreal", note: "Feb 2022"},
     ];
 
 const headerStyle = {

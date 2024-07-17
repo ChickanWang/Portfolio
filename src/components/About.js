@@ -128,7 +128,7 @@ function About() {
                         I'm a 4th year Computer Science student specializing in AI at UWaterloo, seeking 2025 new grad positions.
                         <br />
                         <br />
-                        Backend @ WealthyPlanet, Prev @ Zynga, SS&C, Farmlink, Explorer Hop
+                        Incoming @ Tesla, Prev @ Zynga, SS&C
                     </Typography>
                     <Box sx={{
                         display: 'grid',

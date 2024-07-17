@@ -5,18 +5,18 @@ import ExplorerHop from '../static/logos/explorerhop.jpeg';
 import FarmLink from '../static/logos/farmlink.jpeg';
 import SSNC from '../static/logos/ss&c.png';
 import Zynga from '../static/logos/zynga.png';
-import WealthyPlanet from '../static/logos/wealthyplanet.jpeg';
+import Tesla from '../static/logos/tesla.png';
 import UWaterloo from '../static/logos/uwaterloo.jpeg';
 import ResumeCard from './ResumeCard';
 
 const companies = [
     {
-        image: WealthyPlanet,
-        name: 'WealthyPlanet',
-        title: 'Backend Engineer',
-        duration: 'May 2024 - Present',
-        location: 'Burlington, ON',
-        link: 'https://www.wealthyplanet.com/'
+        image: Tesla,
+        name: 'Tesla',
+        title: 'Data Science Engineer',
+        duration: 'Sep 2024 - Dec 2024',
+        location: 'Palo Alto, CA',
+        link: 'https://www.tesla.com/'
     },
     {
         image: Zynga,
