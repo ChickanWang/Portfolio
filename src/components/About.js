@@ -144,7 +144,7 @@ function About() {
                         </Box>
                         <Box>
                             <Typography variant="h6" sx={headerStyle}>Hobbies</Typography>
-                            <Typography sx={contentStyle}><a href="https://leetcode.com/ChickenWang">Leetcode</a> | <a href="https://codeforces.com/profile/ChickenWang">Codeforces</a> | <a href="https://www.op.gg/summoners/na/ChickenWang-0000">opgg</a></Typography>
+                            <Typography sx={contentStyle}><a href="https://leetcode.com/ChickenWang">Leetcode</a> | <a href="https://www.strava.com/athletes/73815252">Strava</a> | <a href="https://www.op.gg/summoners/na/ChickenWang-0000">opgg</a></Typography>
                         </Box>
                     </Box>
                 </Box>
