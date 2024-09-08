@@ -13,7 +13,7 @@ const companies = [
     {
         image: Tesla,
         name: 'Tesla',
-        title: 'Data Science Engineer',
+        title: 'Software Development Engineer',
         duration: 'Sep 2024 - Dec 2024',
         location: 'Palo Alto, CA',
         link: 'https://www.tesla.com/'
