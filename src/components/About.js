@@ -41,6 +41,7 @@ function About() {
             display: 'flex',
             flexDirection: 'column',
             height: '100%',
+            width: '100%',
             padding: { xs: '10px', sm: '30px' },
             backgroundColor: "#feffe9",
             border: '2px solid black',
@@ -125,10 +126,10 @@ function About() {
                             fontFamily: 'Inconsolata, monospace',
                             fontSize: "14px",
                         }}>
-                        I'm a 4th year Computer Science student specializing in AI at UWaterloo, seeking 2025 new grad positions.
+                        Incoming SWE @ Bloomberg, Prev @ Tesla, Zynga
                         <br />
                         <br />
-                        SDE @ Tesla, Prev @ Zynga, SS&C
+                        A proud Oakville native and Waterloo student, I’m committed to building meaningful software and exploring new recipes in my downtime.
                     </Typography>
                     <Box sx={{
                         display: 'grid',
@@ -140,7 +141,7 @@ function About() {
                     }}>
                         <Box>
                             <Typography variant="h6" sx={headerStyle}>Coursework</Typography>
-                            <Typography sx={contentStyle}><a href="https://uwflow.com/course/ece457c">ECE457C</a> | <a href="https://uwflow.com/course/cs370">CS370</a> | <a href="https://uwflow.com/course/CS348">CS348</a></Typography>
+                            <Typography sx={contentStyle}><a href="https://uwflow.com/course/cs486">CS486</a> | <a href="https://uwflow.com/course/cs451">CS451</a> | <a href="https://uwflow.com/course/ece457c">ECE457C</a></Typography>
                         </Box>
                         <Box>
                             <Typography variant="h6" sx={headerStyle}>Hobbies</Typography>
@@ -162,18 +163,10 @@ function About() {
                         alignItems: 'center',
                         border: '2px solid black',
                         backgroundColor: '#e4f8ba',
-                        padding: { xs: '5px', md: '0px' }
-                    }}>
-                    <Typography
-                        sx={{
-                            marginTop: 'auto',
-                            fontFamily: 'Inconsolata, monospace',
-                            fontWeight: 500
-                        }}>
-                        Under Construction
-                    </Typography>
-                    <Typography sx={{ fontFamily: 'Inconsolata, monospace' }} >⋆﹥━━━━━━━━━━━━━━━━━━━━━﹤⋆</Typography>
-                    <Box sx={{ display: 'flex', marginBottom: 'auto', alignItems: 'center', justifyContent: 'space-between', }}>
+                        padding: { xs: '0px', md: '0px' }
+                    }}
+                >
+                    <Box sx={{ display: 'flex', marginTop: 'auto', alignItems: 'center', justifyContent: 'space-between', }}>
                         <a href="https://d3l-n3st.vercel.app/prev">
                             <Box component="img" src={leftarr} alt="Left" sx={{ width: 20, height: 20 }} />
                         </a>
@@ -184,6 +177,17 @@ function About() {
                             <Box component="img" src={rightarr} alt="Right" sx={{ width: 20, height: 20 }} />
                         </a>
                     </Box>
+                    <Typography sx={{ fontFamily: 'Inconsolata, monospace' }} >⋆﹥━━━━━━━━━━━━━━━━━━━━━﹤⋆</Typography>
+                    <Typography
+                        variant="body2"
+                        color="text.secondary"
+                        sx={{ 
+                            fontFamily: 'Inconsolata, monospace',
+                            marginBottom: 'auto'
+                        }}
+                    >
+                        Last Updated: January 10, 2025
+                    </Typography>
                 </Box>
             </Box>
         </Box>
