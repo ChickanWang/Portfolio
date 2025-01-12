@@ -13,7 +13,7 @@ import ResumeCard from './ResumeCard';
 const companies = [
     {
         image: Bloomberg,
-        name: 'Bloomberg LP',
+        name: 'Bloomberg L.P.',
         title: 'Software Engineer',
         duration: 'Sep 2025',
         location: 'New York City, NY',
@@ -21,7 +21,7 @@ const companies = [
     },
     {
         image: Tesla,
-        name: 'Tesla',
+        name: 'Tesla Inc.',
         title: 'Software Development Engineer Intern',
         duration: 'Sep 2024 - Dec 2024',
         location: 'Palo Alto, CA',

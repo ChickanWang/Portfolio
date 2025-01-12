@@ -186,7 +186,7 @@ function About() {
                             marginBottom: 'auto'
                         }}
                     >
-                        Last Updated: January 10, 2025
+                        Last Updated: January 12, 2025
                     </Typography>
                 </Box>
             </Box>

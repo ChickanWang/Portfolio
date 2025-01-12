@@ -5,11 +5,11 @@ import Berlin from '../static/photos/Berlin.JPG';
 import Iceland from '../static/photos/Iceland.JPG';
 import Icepick from '../static/photos/Icepick.JPG';
 import Prague from '../static/photos/Prague.JPG';
-import Algonquin from '../static/photos/Algonquin.JPG';
+import Japan from '../static/photos/Japan.JPG';
 import Ski from '../static/photos/Ski.JPG';
 
 const photos = [
-        {image: Algonquin, name: "Algonquin", note: "Jun 2024"},
+        {image: Japan, name: "Japan", note: "Jan 2025"},
         {image: Berlin, name: "Berlin", note: "May 2024"}, 
         {image: Prague, name: "Prague", note: "May 2024"},
         {image: Ski, name: "Skiing", note: "Feb 2024"}, 
